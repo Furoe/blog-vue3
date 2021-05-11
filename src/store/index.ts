@@ -1,7 +1,21 @@
-import { createStore } from 'vuex'
+import { createStore, Store } from 'vuex'
+import { InjectionKey } from 'vue'
 
-export const store = createStore({
+export interface State {
+  count: number
+}
+
+export const key: InjectionKey<Store<State>> = Symbol()
+
+export const store = createStore<State>({
   state(){
-    count: 1
+    return {
+      count: 0
+    }
+  },
+  mutations: {
+    increment(state){
+      state.count++
+    }
   }
 })
