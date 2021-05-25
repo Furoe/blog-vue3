@@ -58,7 +58,7 @@ export default class ThreeScene  {
     this.scene.add(ambient)
   }
 
-  private setContent(object) {
+  private setContent(object: any) {
  
     object.updateMatrixWorld();
     const box = new THREE.Box3().setFromObject(object);
@@ -95,7 +95,7 @@ export default class ThreeScene  {
     dracoLoader.preload()
     loader.setDRACOLoader(dracoLoader)
  
-    loader.load('/model/tulip.glb', (gltf) => {
+    loader.load('/model/njdj_2.glb', (gltf) => {
       const model = gltf.scene;
       console.log(model)
       this.setContent(gltf.scene)
