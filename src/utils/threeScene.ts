@@ -8,6 +8,7 @@ export default class ThreeScene  {
   camera: THREE.PerspectiveCamera
   renderer: THREE.WebGLRenderer
   controls: OrbitControls
+  point: THREE.PointLight
   model: null
   lights: null
   AnimationMixer: null
@@ -17,6 +18,9 @@ export default class ThreeScene  {
     this.camera = new THREE.PerspectiveCamera(90,window.innerWidth/window.innerHeight,0.1,1000)
     this.renderer = new THREE.WebGLRenderer({antialias: true})
     this.controls = new OrbitControls(this.camera, this.renderer.domElement)
+    // this.point = new THREE.PointLight(0xffffff)
+    // this.point.position.set(400, 200, 300)
+    // this.scene.add(this.point)
     this.init()
     window.addEventListener('resize', this.onWindowResize, false)
   }
@@ -97,6 +101,7 @@ export default class ThreeScene  {
  
     loader.load('/model/njdj_2.glb', (gltf) => {
       const model = gltf.scene;
+      console.log(gltf)
       console.log(model)
       this.setContent(gltf.scene)
 			// model.position.set( 1, 1, 0 );
