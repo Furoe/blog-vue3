@@ -1,0 +1,74 @@
+
+/* flex布局 */
+.fe-flex{
+  display: flex;
+}
+
+.fe-row-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fe-row-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 宽度 */
+.fe-w-100{
+  width: 100%;
+}
+
+/* 高度 */
+.fe-h-100{
+  height: 100%;
+}
+
+/* 字体大小 */
+.fe-fs-lg{
+  font-size: $font-lg;
+}
+
+.fe-fs-r
+
+/* 字体粗细 */
+.fe-font-bold{
+  font-size: bold;
+}
+
+/* 字体颜色 */
+.fe-fc-base{
+  color: #eee;
+}
+
+/* 字体阴影 */
+.fe-ts-hl{
+  text-shadow: 0.1rem 0.1rem 0.2rem rgb(0 0 0 / 15%);
+}
+
+.fe-ts-hr{
+  text-shadow: 0.05rem 0.05rem 0.1rem rgb(0 0 0 / 30%);
+}
+
+/* 行高 */
+.fe-lh-lg{
+  line-height: $gap-lg;
+}
+
+/* 指针悬浮样式 */
+.fe-cp{
+  cursor: pointer;
+}
+
+/* 内边距 */
+.fe-px-36{
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.fe-py-10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

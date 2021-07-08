@@ -57,9 +57,12 @@ export default class ThreeScene  {
   }
 
   private loadLight(){
-    const ambient = new THREE.AmbientLight(0xFFFFFF)
+    const ambient = new THREE.AmbientLight(0xffffff)
     ambient.position.set(0, 1, 0)
     this.scene.add(ambient)
+    const spot = new THREE.SpotLight(0xffffff)
+    spot.position.set(0, 1, 0)
+    this.scene.add(spot)
   }
 
   private setContent(object: any) {
@@ -101,8 +104,6 @@ export default class ThreeScene  {
  
     loader.load('/model/njdj_2.glb', (gltf) => {
       const model = gltf.scene;
-      console.log(gltf)
-      console.log(model)
       this.setContent(gltf.scene)
 			// model.position.set( 1, 1, 0 );
 			// model.scale.set( 0.01, 0.01, 0.01 );

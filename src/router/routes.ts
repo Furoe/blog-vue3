@@ -1,10 +1,11 @@
 import { RouteRecordRaw } from "vue-router"
+import Main from '@/components/Main.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/view/Home.vue')
+    component: Main
   },
   {
     path: '/model',
