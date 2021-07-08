@@ -3,9 +3,10 @@
     <div class=" fe-cp fe-fc-base fe-ts-hl fe-fs-lg fe-ft-bold">{{blogName}}</div>
     <div class="fe-row-center fe-fc-base fe-ts-hr menu">
       <a href="#" class="fe-cp fe-header">首页</a>
-      <a href="#" class="fe-cp fe-ml-sm fe-header">首页</a>
-      <a href="#" class="fe-cp fe-ml-sm fe-header">首页</a>
-      <a href="#" class="fe-cp fe-ml-sm fe-header">首页</a>
+      <a href="#" class="fe-cp fe-ml-sm fe-header">目录</a>
+      <a href="#" class="fe-cp fe-ml-sm fe-header">工具</a>
+      <a href="#" class="fe-cp fe-ml-sm fe-header">词云</a>
+      <a href="#" class="fe-cp fe-ml-sm fe-header">关于我</a>
     </div>
   </div>
   
@@ -33,13 +34,14 @@ export default defineComponent({
   background-size: 30px 30px;
 }
 .menu{
-  position: relative;
   a{
+      position: relative;
       color: #eee;
       text-decoration: none;
       &::after{
         position: absolute;
         content: '';
+        z-index: -1;
         height: 3px;
         width: 0;
         left: 0;
@@ -47,10 +49,9 @@ export default defineComponent({
         background: #80c8f8;
         transition: all 0.3s ease-in-out;
       }
-  }
-  a:hover::after,a.active:after{
-    left: 0%;
-    width: 100%;
+      &:hover::after{
+        width: 100%;
+      }
   }
 }
 </style>
