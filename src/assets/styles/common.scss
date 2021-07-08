@@ -31,11 +31,9 @@
   font-size: $font-lg;
 }
 
-.fe-fs-r
-
 /* 字体粗细 */
-.fe-font-bold{
-  font-size: bold;
+.fe-ft-bold{
+  font-weight: bold;
 }
 
 /* 字体颜色 */
@@ -72,3 +70,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+/* 外边距 */
+.fe-ml-sm{
+  margin-left: $gap-sm;
+}
+
