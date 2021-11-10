@@ -4,6 +4,7 @@
     <div class="fe-row-center fe-fc-base fe-ts-hr menu">
       <a href="#" class="fe-cp fe-header">首页</a>
       <a href="#" class="fe-cp fe-ml-sm fe-header">目录</a>
+      <a href="ebooks" class="fe-cp fe-ml-sm fe-header">电子书</a>
       <a href="#" class="fe-cp fe-ml-sm fe-header">工具</a>
       <a href="#" class="fe-cp fe-ml-sm fe-header">词云</a>
       <a href="#" class="fe-cp fe-ml-sm fe-header">关于我</a>
@@ -17,6 +18,9 @@ import { defineComponent, ref } from 'vue'
 export default defineComponent({
   setup() {
     let blogName = ref('furoのBlog')
+    let name: number[] = []
+    let age: Array<number> = []
+    let x: [number, string] = [1, '111']
 
     return {
       blogName
