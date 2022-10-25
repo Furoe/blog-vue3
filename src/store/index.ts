@@ -1,21 +1,10 @@
-import { createStore, Store } from 'vuex'
-import { InjectionKey } from 'vue'
+import type {App} from 'vue'
+import {createPinia} from 'pinia'
 
-export interface State {
-  count: number
+const store  = createPinia()
+
+export function setupStore(app: App<Element>){
+  app.use(store)
 }
 
-export const key: InjectionKey<Store<State>> = Symbol()
-
-export const store = createStore<State>({
-  state(){
-    return {
-      count: 0
-    }
-  },
-  mutations: {
-    increment(state){
-      state.count++
-    }
-  }
-})
+export {store}

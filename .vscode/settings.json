@@ -1,0 +1,49 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "path-intellisense.extensionOnImport": true,
+  "eslint.validate": ["javascript", "html", "vue"],
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "javascript.format.semicolons": "remove",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#f56c6c",
+      "strikethrough": false,
+      "backgroundColor": "#fef0f0"
+    },
+    {
+      "tag": "?",
+      "color": "#ff4d4f",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "TODO",
+      "color": "#fff",
+      "strikethrough": false,
+      "backgroundColor": "#FEBE2A"
+    },
+    {
+      "tag": "*",
+      "color": "#fff",
+      "strikethrough": false,
+      "backgroundColor": "#91d5ff"
+    }
+  ]
+}
